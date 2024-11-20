@@ -175,7 +175,7 @@ footer .social-links a:hover {
 /* Hero Section for Schedule */
 .schedule-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/Muschel-Spaghetti\ in\ Tomatensugo.jpeg);
+    url(/assets/Muschel-Spaghetti\ in\ Tomatensugo.jpeg);
   color: #fff;
   text-align: center;
   padding: 50px 20px;
@@ -327,7 +327,7 @@ footer .social-links a:hover {
 
 .modal-header {
   padding: 10px;
-  background-image: url(/Muschel-Spaghetti\ in\ Tomatensugo.jpeg);
+  background-image: url(/assets/Muschel-Spaghetti\ in\ Tomatensugo.jpeg);
   color: white;
   text-align: center;
   font-family: CF3;
