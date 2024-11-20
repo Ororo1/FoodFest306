@@ -1,0 +1,348 @@
+/* General Styles */
+@font-face {
+  font-family: "CF1";
+  src: url("/Cinzel-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CF2";
+  src: url("/RegarDemo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CF3";
+  src: url("/Adlery-Swash-trial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: linear-gradient(to right, #000, #008000);
+  color: #fff;
+  padding-top: 50px;
+  text-align: right;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 30px;
+  font-family: CF1;
+  font-size: larger;
+}
+
+header nav a:hover {
+  background-color: #2e2a2a6d;
+  border: #2e2a2a6d solid 2px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.reg {
+  background-color: white;
+  color: #004d00;
+  border-radius: 50px;
+  border: 5px solid white;
+  padding: 5px;
+  height: fit-content;
+}
+.reg:hover {
+  background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #000, #008000);
+  color: #fff;
+  padding: 50px;
+  height: fit-content;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: CF2;
+  font-size: 200px;
+  opacity: 0.75;
+}
+
+.hero-content p {
+  margin: 10px 0;
+  font-size: 30px;
+  font-family: CF3;
+}
+
+.hero-content .btn-ticket {
+  background: #c77408;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  font-size: 25px;
+}
+
+.hero-content .btn-ticket:hover {
+  background: linear-gradient(to right, #000, #008000);
+}
+
+.hero-image {
+  max-width: 40%;
+  border-radius: 10px;
+}
+
+/* About Section */
+#about {
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
+
+#gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: black;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section for Schedule */
+.schedule-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Muschel-Spaghetti\ in\ Tomatensugo.jpeg);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.schedule-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.schedule-hero p {
+  font-size: 1.2rem;
+}
+
+/* Schedule Section */
+#schedule {
+  padding: 20px;
+  background: rgba(91, 83, 83, 0.539);
+  text-align: center;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.schedule-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-card h3 {
+  font-size: 1.5rem;
+  color: #008000;
+  margin-bottom: 10px;
+}
+
+.schedule-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Hero Section for Blog */
+.blog-hero {
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.blog-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.blog-hero p {
+  font-size: 1.2rem;
+}
+
+/* Blog Posts Section */
+#blog-posts {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.blog-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-card h3 {
+  font-size: 1.5rem;
+  color: #008000;
+  margin: 10px;
+}
+
+.blog-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px;
+}
+
+.blog-card .read-more {
+  display: inline-block;
+  margin: 10px;
+  color: #008000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.blog-card .read-more:hover {
+  color: #004d00;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.094);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.modal-header {
+  padding: 10px;
+  background-image: url(/Muschel-Spaghetti\ in\ Tomatensugo.jpeg);
+  color: white;
+  text-align: center;
+  font-family: CF3;
+  font-size: 25px;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

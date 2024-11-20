@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodFest - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span><a href="schedule.html">SCHEDULE</a></span>
+        <span><a href="blog.html">BLOG</a></span>
+        <span><a href="contact.html">SPONSORSHIP</a></span>
+        <span><a id="myBtn" class="reg">GET YOUR TICKETS</a></span>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>FoodFest,</h1>
+        <p>Celebrate Local Cuisines from all over the World!</p>
+        <button class="btn-ticket"><a>Get Tickets</a></button>
+      </div>
+      <img
+        src="/Nacho_Cheese_Beef_Wrap-removebg-preview.png"
+        alt="Delicious food"
+        class="hero-image"
+      />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About FoodFest</h2>
+      <p>
+        FoodFest is an annual celebration of local cuisine, featuring a variety
+        of restaurants, food vendors, cooking demonstrations, and live music
+        performances. Join us for a fun-filled day of food, workshops, and
+        entertainment.
+      </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Shots from our last event</h2>
+      <div class="gallery-grid">
+        <img src="/food (1).jpeg" alt="Food photo 1" />
+        <img src="/food (5).jpg" alt="Food photo 2" />
+        <img src="/food (3).jpeg" alt="Food photo 3" />
+        <img src="/food (4).jpg" alt="Food photo 4" />
+      </div>
+    </section>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Register for FoodFest</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>FoodFest Registration</h2>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your full name"
+              required
+            /><br /><br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            /><br /><br />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required /><br /><br />
+
+            <label for="attendance">Are you:</label>
+            <select id="attendance" name="attendance" required>
+              <option value="alone">Coming Alone</option>
+              <option value="partner">Coming with a Partner</option>
+              <option value="family">Coming with Family</option></select
+            ><br /><br />
+
+            <div id="familyDetails" style="display: none">
+              <label for="kids">Number of Kids:</label>
+              <input
+                type="number"
+                id="kids"
+                name="kids"
+                min="0"
+                placeholder="Enter number of kids"
+              /><br /><br />
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+          <p id="successMessage" style="color: green; display: none">
+            Registration successful! Check your email for the ticket
+            confirmation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 FoodFest. All rights reserved.</p>
+      <p>CONTACT US</p>
+      <div class="social-links">
+        <a href="">foodfest24@gmail.com</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
